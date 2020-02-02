@@ -3,7 +3,7 @@
 ;VERSION 1.0(Beta)
 ;FILENAME OSM.SYS
 ;未完成なブートローダです。
-;Copyright(C) @Midi_XPChan 2003-2020
+;Copyright(C) @Midi_Dayo 2003-2020
 
 BITS 16;ビット数を書く
 
