@@ -2,9 +2,7 @@
 ;OSM-BASIC Version 1.0
 ;VERSION 1.0(Beta)
 ;FILENAME OSM.SYS
-
-;OSM.SYS is BOOT Loader and Kernel System.
-
+;未完成なブートローダです。
 ;Copyright(C) @Midi_XPChan 2003-2020
 
 BITS 16;ビット数を書く
@@ -167,11 +165,6 @@ HLT
 
 JMP Err_HLT
 
-
-TIMES 0x7dfe-($-$$) db 0
-
-BS_BootSigin db 0xAA55;有効なブートローダであることを意味するシグネチャ
-
 section .data
 
 ;変な文字が表示されたら空白を作る。
@@ -184,3 +177,6 @@ disk_read_err db 'A Disk Reset Error.',0x0D,0x0A,0x00
 
 start db 'Starting OS/M-BASIC...',0x0D,0x0A,0x00
 
+TIMES 0x7dfe-($-$$) db 0
+
+BS_BootSigin db 0xAA55;有効なブートローダであることを意味するシグネチャ
