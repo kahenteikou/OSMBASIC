@@ -29,5 +29,5 @@ JMP Kernel_IO_HLT_Main
 
 section .datas
 ver1 db "Copyright(C) @Midi_Dayo 2003-2020",0x0D,0x0A,0x00
-
+sys_err db "System Error.",0x0D,0x0A,0x00
 ;カーネルのソースコードより、ブートローダのソースコードが長いの草生えた。
